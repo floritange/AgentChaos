@@ -1,8 +1,8 @@
 # AgentChaos
 **Evaluate agent system robustness through controlled, runtime, non-intrusive LLM API fault injection.**
 
-[![PyPI version](https://img.shields.io/pypi/v/agentchaos?color=blue)](https://pypi.org/project/agentchaos/)
-[![Python](https://img.shields.io/pypi/pyversions/agentchaos.svg)](https://pypi.org/project/agentchaos/)
+[![PyPI version](https://img.shields.io/pypi/v/agentchaos-sdk?color=blue)](https://pypi.org/project/agentchaos-sdk/)
+[![Python](https://img.shields.io/pypi/pyversions/agentchaos-sdk.svg)](https://pypi.org/project/agentchaos-sdk/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CI](https://github.com/floritange/AgentChaos/actions/workflows/ci.yml/badge.svg)](https://github.com/floritange/AgentChaos/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/floritange/AgentChaos/graph/badge.svg?branch=main)](https://codecov.io/gh/floritange/AgentChaos?branch=main)
@@ -20,7 +20,7 @@ LLM-based agent systems issue multiple API calls per task, and each call can fai
 ## Quick Start
 
 ```bash
-pip install agentchaos
+pip install agentchaos-sdk
 ```
 
 ```python
