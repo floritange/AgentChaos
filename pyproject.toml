@@ -1,5 +1,5 @@
 [project]
-name = "agentchaos"
+name = "agentchaos-sdk"
 version = "0.1.0"
 description = "Evaluate agent system robustness through controlled, runtime, non-intrusive LLM API fault injection."
 readme = "README.md"
