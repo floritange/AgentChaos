@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+build/
+dist/
+uv.lock
+
+# Environment
+.env
+**/.env
+config.yaml
+
+# IDE & AI tools
+.vscode/
+.idea/
+.claude/
+.omc/
+CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+coverage.xml
+htmlcov/
+.deepeval/
+
+# Runtime output
+examples/traces/
+
+# Project-specific: not published
+refs/
+paper/

@@ -1,0 +1,80 @@
+[project]
+name = "agentchaos"
+version = "0.1.0"
+description = "Evaluate agent system robustness through controlled, runtime, non-intrusive LLM API fault injection."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "AgentChaos Contributors"},
+]
+keywords = ["agent", "chaos", "robust", "evaluation", "fault-injection", "llm", "testing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "loguru>=0.7,<1.0",
+    "httpx>=0.24,<1.0",
+    "openai>=2.0,<3.0",
+    "langchain>=0.3,<2.0",
+    "langchain-openai>=0.3,<2.0",
+    "google-adk[extensions]>=1.0,<2.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/floritange/AgentChaos"
+Documentation = "https://floritange.github.io/AgentChaos/"
+Repository = "https://github.com/floritange/AgentChaos"
+Issues = "https://github.com/floritange/AgentChaos/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0,<10.0",
+    "pytest-cov>=7.0,<8.0",
+    "pytest-asyncio>=1.0,<2.0",
+    "ruff>=0.4,<1.0",
+    "pre-commit>=4.6.0",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agentchaos"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.coverage.run]
+source = ["agentchaos"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "if __name__ == .__main__.",
+]

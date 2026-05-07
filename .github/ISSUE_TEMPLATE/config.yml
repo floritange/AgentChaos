@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Question
+    url: https://github.com/floritange/AgentChaos/discussions
+    about: Ask general questions in GitHub Discussions
+  - name: Fault Reference
+    url: https://github.com/floritange/AgentChaos/blob/main/docs/faults.md
+    about: Check the fault reference for all 65 configurations
