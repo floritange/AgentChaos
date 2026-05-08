@@ -71,6 +71,7 @@ select = ["E", "F", "W", "I"]
 
 [tool.coverage.run]
 source = ["agentchaos"]
+omit = ["agentchaos/__main__.py"]
 
 [tool.coverage.report]
 exclude_lines = [
